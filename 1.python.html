@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 </head>
 <body>
-  <p>파이썬 복습을 해보고자 이 코드를 작성해 보았다. 아직 미완성이지만, 추후에 완성시킬 생각이다.</p>
+  <p>파이썬 복습을 해보고자 이 코드를 작성해 보았다. 학점 계산기에 지금까지 입력했던 평점들이 저장되서 기록이 가능하다.</p>
   <pre>name = []
 year = []
 month = []
@@ -74,11 +74,16 @@ if c == 1:
         lines = first.readlines()
         first.close()
 
+
+        총_학점 = open("학점.txt","r")
+        모든_학점 = 총_학점.readlines()
+        총_학점.close()
+
         total_1 = 0
         for line in lines:
             score = int(line)
-            total_1 = total_1 + score
-        print("점수 총 합: %d"%total_1)
+            total_1 = total_1 + score *int(number) # 점수 X 학점
+        print("점수 x 학점 총 합: %d"%total_1)
 
         second = open("C:\\Users\\tjrgh\\Desktop\\점수.txt")# 학점 총합
         lines = second.readlines()
@@ -87,10 +92,10 @@ if c == 1:
         total_2 = 0
         for line in lines:
             score = int(line)
-            total_2 = total_2 + score
+            total_2 = total_2 + score # 총 학점
         print("학점 총 합: %d"%total_2)
 
-        sum = total_1 / total_2
+        sum = total_1 / total_2 # 평점 계산 (점수x학점)/(총 학점)
 
         sum = str(sum)
 

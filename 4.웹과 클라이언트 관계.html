@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <title>서버와 클라이언트</title>
+  <meta charset="utf">
+<body>
+  <p>
+    <h1>서버와 클라이언트에 대해서 알아보자.</h1>
+    <br><br>
+    인터넷이 동작하기 위해서는 컴퓨터가 최소 2대 이상이 필요하다.
+    <br><br>
+    팀 버너리스는 인터넷을 이용해서 <stonrg>웹</strong>을 만들었다.
+    <br><br>
+    그리고, 2개의 프로그램을 개발하게 되는데 각각의 프로그램에 <strong>"웹 브라우저" "웹 서버"</strong>라는 이름을 붙였다.
+    <br><br>
+    <font color="tomato">웹 서버가 설치된 컴퓨터에는 info.cern.ch라는 주소를 부여한다.</font>
+    <br><br>
+    또 이 컴퓨터에는 어떤 디렉토리에 index.html 이라는 파일을 저장한다.
+    <br><br>
+    [웹 브라우저 주소창에 아래의 주소를 입력하고 엔터를 치면 어떤 일이 일어나는지 관찰해보자]
+    <br><br>
+    <img src="4/1.png" alt="HI">
+    <br><br>
+    <font color="tomato">요청하는 컴퓨터 = 클라이언트 컴퓨터 = 웹 클라이언트</font>
+    <br><br>
+    웹 브라우저는 클라이언트 컴퓨터에서 동작한다.
+    <br><br>
+    <font color="tomato">응답하는 컴퓨터 = 서버 컴퓨터 = 웹 서버</font>
+    <br><br>
+    웹 서버는 서버 컴퓨터에서 동작한다.
+    <br><br>
+    (1) 서버 컴퓨터에 Index.html이라는 파일이 있다면, 클라이언트 컴퓨터에서 주소창에 서버의 주소를 입력하고 엔터를 치면, 웹 브라우저가 설치된 컴퓨터는 인터넷을 통해서 전기적인 신호를 info.cern.ch라는 주소의 컴퓨터에게 보낸다.
+    <br><br>
+    (2) 전기적인 신호 안에는 "나는 index.html 이라는 파일의 코드를 원한다."는 내용이 포함되어 있다.
+    <br><br>
+    (3) 그럼 info.cern.ch에 설치된 웹 서버라는 프로그램이 어떤 디렉토리에서 index.html이라는 파일을 찾는다.
+    <br><br>
+    (4) 그리고 그 내용을 읽어서 전기적인 신호로 바꾼 후, 웹 브라우저가 설치된 컴퓨터에 신호를 보낸다.
+    <br><br>
+    (5) 그럼 웹 브라우저가 설치된 컴퓨터에는 index.html 파일의 내용 = 코드 가 도착한다.
+    <br><br>
+    (6) 웹 브라우저는 그 코드를 읽어서 웹 페이지를 화면에 출력해준다.
+    <br><br>
+    Ex) 만약 게임을 만든다면, <font color="tomato">사용자의 컴퓨터에 설치된 프로그램</font>을 뭐라고 할까?
+    <br><br>
+    <font color="tomato">게임 클라이언트</font>라고 한다.
+    <br><br>
+    반대로, 게임회사의 <font color="tomato">서버 컴퓨터에 설치된 프로그램</font>을 <font color="tomato">게임 서버</font>라고 하는것이다.
+    <br><br>
+    <h1>호스팅이란?</h1>
+    웹 서버는 컴퓨터가 필요하며, 냉장고처럼 항상 켜져 있어야 한다.
+    <br><br>
+    <font color="tomato">인터넷에 연결된 컴퓨터 하나 하나</font>를 <font color="tomato">호스트</font>라고 한다.
+    <br><br>
+    <font color="tomato">이런 컴퓨터를 빌려주는 사업</font>을 <font color="toamto">호스팅</font>이라고 한다.
+    <br><br>
+    <h1>아래는 GitHubPage를 이용해서 블로그를 호스팅하는 방법이다.</h1>
+    <br><br>
+    <img src="4/host/1.png" alt="one"/>
+    <br><br>
+    GitHubPage에 로그인하고, New repository를 클릭한다.
+    <br><br>
+    # repository는 저장소이다.
+    <br><br>
+    <img src="4/host/2.png" alt="two"/>
+    <br><br>
+    (1) 원하는 저장소 이름을 입력한다.
+    <br><br>
+    (2) public으로 체크해야지 다른 사람들이 볼 수 있다.
+    <br><br>
+    (3) Github에서 저장소를 가져올 것이라면 README를 생성하도록, Initialize this repository with a README를 체크한다.
+    <br><br>
+    <img src="4/host/3.png" alt="three"/>
+    <br><br>
+    Upload File을 클릭하면, 아래 (그림 4)가 나온다.
+    <br><br>
+    <img src="4/host/4.png" alt="four"/>
+    <br><br>
+    작성한 html 파일들을 드래그해서 (1) 공간에 올리고, commit change에 First라 입력하고, (3) commit change를 클릭하였다.
+    <br><br>
+    <img src="4/host/5.png" alt="five"/>
+    <br><br>
+    (그림 4) 이후 settings를 클릭한다.
+    <br><br>
+    <img src="4/host/6.png" alt="six"/>
+    <br><br>
+    Settings를 누르고 밑으로 내리다보면 GitHubPage가 보이는데, 위와 똑같이 세팅한다.
+    <br><br>
+    <img src="4/host/7.png" alt="seven"/>
+    <br><br>
+    (그림 6) 과정이 끝나면, 자신의 주소가 보인다. <- 웹 호스팅
+    <br><br>
+    <img src="4/host/8.png" alt="eight"/>
+    <br><br>
+    호스팅이 완료될 걸 확인할 수 있다.
+  </p>
+</body>
+</head>
+</html>
